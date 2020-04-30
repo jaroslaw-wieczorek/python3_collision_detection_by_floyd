@@ -86,8 +86,11 @@ def save_results(m0, m1, hash1, hash2):
     file.write("\n\nMessage 1:\n")
     file.write(my_prefix.hex() + m1.hex())
 
-    file.write("\n\nHash:\n")
-    file.write(hash2.hex())
+    file.write("\n\nHash hexdigest:\n")
+    file.write(hash2)
+
+    file.write("\n\nHash digest to hex():\n")
+    file.write(hash1.hex())
 
 
 # Execute floyd funtion with initial value
